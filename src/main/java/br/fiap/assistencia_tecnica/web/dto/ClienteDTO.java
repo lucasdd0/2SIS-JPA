@@ -1,11 +1,15 @@
 package br.fiap.assistencia_tecnica.web.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class ClienteDTO {
     private Long id;
     private String nome;
     private String email;
     private String telefone;
     private String senha;
+
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
 
     public Long getId() {
         return id;
