@@ -24,7 +24,4 @@ public class Equipamento {
     private LocalDate dataCadastro;
 
 
-
-
-
 }
