@@ -1,5 +1,6 @@
 package br.fiap.assistencia_tecnica.web.controller;
 
+import br.fiap.assistencia_tecnica.domain.Equipamento;
 import br.fiap.assistencia_tecnica.service.EquipemantoService;
 import br.fiap.assistencia_tecnica.web.dto.EquipamentoDTO;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +18,7 @@ public class EquipamentoController {
     }
 
     @PostMapping
-    public void inserir(@RequestBody EquipamentoDTO equipamentoDTO){
+    public Equipamento inserir(@RequestBody EquipamentoDTO equipamentoDTO){
         return service.inserir(equipamentoDTO);
     }
 }
